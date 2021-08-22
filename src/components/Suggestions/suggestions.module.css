@@ -1,0 +1,27 @@
+.suggestions_list{
+    display: grid;
+    grid-gap: 24px;
+    grid-auto-flow: row;
+}
+.suggestions_card{
+    background: rgba(247, 247, 247, 0.6);
+    border-radius: 12px;
+    min-height:  68px;
+    padding: 16px 24px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+.suggestions_card{
+    grid-auto-flow: row;
+
+}
+.suggestions_list{
+    grid-auto-flow: column;
+
+}
+}

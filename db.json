@@ -1,0 +1,59 @@
+{
+  "preguntas": [
+    {
+      "a": "Le gusta resolver problemas de matemáticas.",
+      "b": "Prefiere diseñar el modelo de casas, edificios, parques, etc."
+    },
+    {
+      "a": "Le agrada observar la conducta de las personas y opinar sobre su personalidad.",
+      "b": "Prefiere expresar un fenómeno concreto en una ecuación matemática. ecuación matemática."
+    },
+    {
+      "a": "Le gusta caminar por los cerros buscando piedras raras.",
+      "b": "Prefiere diseñar las viviendas de una urbanización."
+    },
+    {
+      "a": "Le gusta escribir artículos deportivos deportivos para un diario.",
+      "b": "Prefiere determinar la resistencia de materiales para una construcción"
+    },
+    {
+      "a": "Le gusta hacer tallado en madera",
+      "b": "Prefiere calcular la cantidad de materiales para una construcción."
+    },
+    {
+      "a": "Le gusta ordenar y archivar documentos",
+      "b": "Prefiere proyectar el sistema eléctrico de una construcción."
+    },
+    {
+      "a": "Le agrada dedicar su tiempo en el estudio de teorías económicas",
+      "b": "Prefiere dedicar su tiempo en la lectura de revistas sobre mecánica."
+    },
+    {
+      "a": " Le gusta mucha la vida militar.",
+      "b": "Prefiere diseñar; maquinas, motores, etc., de alto rendimiento."
+    },
+    {
+      "a": "Le gusta planificar acerca de cómo formar una cooperativa.",
+      "b": "Prefiere estudiar el lenguaje de computación (IBM)."
+    },
+    {
+      "a": "Le agrada estu agrada estudiar la gramática",
+      "b": "Prefiere estudiar las matemáticas."
+    }
+  ],
+  "test": [
+    {
+      "question1": "a",
+      "question2": "b",
+      "question3": "b",
+      "question4": "b",
+      "question5": "b",
+      "question6": "b",
+      "question7": "b",
+      "question8": "b",
+      "question9": "b",
+      "question10": "a",
+      "id": 1
+    }
+  ]
+}
