@@ -13,6 +13,7 @@ html, body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: var(--bg-1);
+  color: var(--text-black);
 }
 
 a {
@@ -24,7 +25,15 @@ a {
   box-sizing: border-box;
   outline-style: none;
 }
+.flex_center{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
 
+}
 label {
   /* font-family: Inter;
   font-style: normal;
