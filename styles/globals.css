@@ -1,20 +1,18 @@
-:root{
-  --bg-1:#FBFBFB;
+:root {
+  --bg-1: #FBFBFB;
   --bg-2: #F7F7F7;
   --text-black: #131D29;
   --question: #162431;
   --primary: #7CD4BB;
-  --white:#FDFDFD;
+  --white: #FDFDFD;
   --shadow: 0px 12px 41px -17px rgba(31, 31, 31, 0.15);
 }
 
-html,
-body {
+html, body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: var(--bg-1);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--bg-1);
 }
 
 a {
@@ -24,13 +22,64 @@ a {
 
 * {
   box-sizing: border-box;
+  outline-style: none;
 }
 
-
-label{
+label {
   /* font-family: Inter;
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px; */
+  font-weight: 600;*/
+  font-size: 1.1rem;
   line-height: 140%;
+}
+.description {
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+.error_message {
+  color: tomato;
+  padding-top: 8px;
+}
+
+.layout_with_margin {
+  width: 100%;
+}
+
+input[type="submit"], button {
+  background-color: var(--primary);
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  width: auto;
+  overflow: visible;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  text-align: inherit;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+  label {
+    font-size: 1.4rem;
+    line-height: 140%;
+  }
+  .layout_with_margin {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
 }

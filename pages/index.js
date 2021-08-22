@@ -1,4 +1,6 @@
 import CardList from '@components/Card/list'
+import Suggestions from '@components/Suggestions'
+import SuggestionsList from '@components/Suggestions/list'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -13,15 +15,20 @@ export default function Home({questions}) {
       </Head>
 
       <main className={styles.main}>
+        <section className={styles.hero}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Bienvenido a <a target="_blank" href="https://nextjs.org">Test vocacional</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Ten en cuenta las siguientes recomendaciones{' '}
+          {/* <code className={styles.code}>pages/index.js</code> */}
         </p>
-        <CardList data={questions} />
+
+        <SuggestionsList/>
+        </section>
+
+        <CardList data={questions} className="layout_with_margin" />
 
       </main>
 

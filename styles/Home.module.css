@@ -21,8 +21,13 @@
   flex-grow: 1;
 }
 
+.hero{
+  background-color: var(--primary);
+  padding: 4rem 24px;
+}
+
 .title a {
-  color: #0070f3;
+  color:var(--white);
   text-decoration: none;
 }
 
@@ -59,8 +64,6 @@
 
 .grid {
   display: grid;
-
-
 }
 
 .card {
@@ -102,4 +105,11 @@
     width: 100%;
     flex-direction: column;
   }
+.title {
+  font-size: 3rem;
+
+}
+.description {
+  font-size: 1.3rem;
+}
 }
