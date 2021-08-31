@@ -1,110 +1,385 @@
 {
   "preguntas": [
     {
-      "a": "Le gusta resolver problemas de matemáticas.",
-      "b": "Prefiere diseñar el modelo de casas, edificios, parques, etc."
+      "nombre": "CASM",
+      "preguntas": [
+        {
+          "a": "Le gusta resolver problemas de matemáticas.",
+          "b": "Prefiere diseñar el modelo de casas, edificios, parques, etc."
+        },
+        {
+          "a": "Le agrada observar la conducta de las personas y opinar sobre su personalidad.",
+          "b": "Prefiere expresar un fenómeno concreto en una ecuación matemática. ecuación matemática."
+        },
+        {
+          "a": "Le gusta caminar por los cerros buscando piedras raras.",
+          "b": "Prefiere diseñar las viviendas de una urbanización."
+        },
+        {
+          "a": "Le gusta escribir artículos deportivos deportivos para un diario.",
+          "b": "Prefiere determinar la resistencia de materiales para una construcción"
+        },
+        {
+          "a": "Le gusta hacer tallado en madera",
+          "b": "Prefiere calcular la cantidad de materiales para una construcción."
+        },
+        {
+          "a": "Le gusta ordenar y archivar documentos",
+          "b": "Prefiere proyectar el sistema eléctrico de una construcción."
+        },
+        {
+          "a": "Le agrada dedicar su tiempo en el estudio de teorías económicas",
+          "b": "Prefiere dedicar su tiempo en la lectura de revistas sobre mecánica."
+        },
+        {
+          "a": " Le gusta mucha la vida militar.",
+          "b": "Prefiere diseñar; maquinas, motores, etc., de alto rendimiento."
+        },
+        {
+          "a": "Le gusta planificar acerca de cómo formar una cooperativa.",
+          "b": "Prefiere estudiar el lenguaje de computación (IBM)."
+        },
+        {
+          "a": "Le agrada estu agrada estudiar la gramática",
+          "b": "Prefiere estudiar las matemáticas."
+        }
+      ]
     },
     {
-      "a": "Le agrada observar la conducta de las personas y opinar sobre su personalidad.",
-      "b": "Prefiere expresar un fenómeno concreto en una ecuación matemática. ecuación matemática."
+      "nombre": "HEA",
+      "preguntas": [
+        {
+          "title": "Me preocupo cuando siento que no le estoy sacando provecho a lo que estudio."
+        },
+        {
+          "title": "Puedo distinguir entre la información más importante y la menos importante que transmite un expositor o el material que estudio."
+        },
+        {
+          "title": "Se me hace difícil ajustarme a un plan de estudio."
+        },
+        {
+          "title": "De cuando en cuando, echo un vistazo a mis apuntes para entender mejor sus contenidos."
+        },
+        {
+          "title": "No me interesa tanto continuar estudiando como conseguir un trabajo."
+        },
+        {
+          "title": "Cuando un profesor está explicando, yo estoy pensando en otras cosas y no escucho realmente lo que él (ella) está diciendo."
+        },
+        {
+          "title": "Cuando estudio empleo ayudas especiales como: subrayar lo más importanteo utilizar claves para resumir."
+        },
+        {
+          "title": "Cuando escucho a un profesor trato de identificar las ideas principales."
+        },
+        {
+          "title": "Me preocupa ser mal evaluado."
+        },
+        {
+          "title": " Me esfuerzo por estar al día con mis obligaciones académicas."
+        },
+        {
+          "title": " Los problemas con mis padres o hermanos son la causa de que no cumplacon algunas obligaciones académicas en casa."
+        },
+        {
+          "title": " Antes de ponerme a estudiar un tema, establezco las ideas principales que voy a trabajar."
+        },
+        {
+          "title": " Incluso cuando estoy estudiando algo que es aburrido y no me gusta, intento acabarlo."
+        },
+        {
+          "title": " No sé qué tengo que hacer para no fracasar en el estudio."
+        },
+        {
+          "title": " Hago lo posible por aprender las palabras nuevas que surgen de ciertas situaciones."
+        },
+        {
+          "title": " Voy al colegio sin prepararme en los temas que se van a discutir."
+        },
+        {
+          "title": " Cuando estudio para una evaluación pienso en las preguntas que deberían hacerme."
+        },
+        {
+          "title": " Yo preferiría no asistir a otras clases fuera del colegio."
+        },
+        {
+          "title": " Utilizo mis apuntes para realizar mis actividades escolares."
+        },
+        {
+          "title": " En caso de ser evaluado, rindo mal porque no sé organizar mi tiempo de estudio ni de trabajo."
+        },
+        {
+          "title": " Cuando estoy estudiando, trato de pensar qué pueden preguntarme en caso de haber una evaluación."
+        },
+        {
+          "title": " Sólo estudio cuando va haber alguna evaluación."
+        },
+        {
+          "title": " Estudio y resumo los temas utilizando mis propias palabras."
+        },
+        {
+          "title": " En caso de estudiar algún curso, comparo mis apuntes con los de otros para estar seguro(a) de que están completos."
+        },
+        {
+          "title": " Me pongo nervioso(a) cuando estudio."
+        },
+        {
+          "title": " Al asistir a clases, repaso mis apuntes antes de empezar algún nuevo tema."
+        },
+        {
+          "title": " Me cuesta resumir lo que explica algún profesor o lo que leo, perjudicando mi aprendizaje."
+        },
+        {
+          "title": " Estudio mucho para salir bien en las evaluaciones, incluso en los temas que no me gustan."
+        },
+        {
+          "title": " Cuando me involucro en mis cursos, con frecuencia siento que no puedo “tomar las riendas” de mis estudios."
+        },
+        {
+          "title": " Cuando estoy estudiando, suelo hacer un alto para pensar en lo que he leído y luego lo vuelvo a leer."
+        },
+        {
+          "title": " Me siento mal mientras estoy rindiendo alguna evaluación, incluso cuando voy bien preparado."
+        },
+        {
+          "title": " Cuando estoy estudiando algo, trato de reunir toda la información paracomprenderla bien."
+        },
+        {
+          "title": " Me convenzo a mí mismo(a) con excusas cuando no cumplo con algunas tareas académicas pendientes."
+        },
+        {
+          "title": " Tengo problemas para planificar el estudio de un tema; no sé qué pasos debo seguir."
+        },
+        {
+          "title": " Cuando voy a pasar por alguna evaluación, estoy bastante seguro(a) de que me irá bien."
+        },
+        {
+          "title": " Cuando tengo que hacer un trabajo académico, siempre lo dejo para más tarde."
+        },
+        {
+          "title": " Trato de comprobar si estoy entendiendo lo que un profesor está explicando durante una clase."
+        },
+        {
+          "title": " A mí no me gusta aprender un montón de cosas. Yo sólo quiero aprender lo que necesito para mantenerme en un trabajo."
+        },
+        {
+          "title": " A veces me cuesta concentrarme en mis clases porque estoy cansado(a)."
+        },
+        {
+          "title": " Trato de relacionar lo que estoy aprendiendo con lo que ya sabía."
+        },
+        {
+          "title": " Siempre que me involucro en los cursos, me propongo conseguir buenos resultados al acabarlos."
+        },
+        {
+          "title": " Acabo estudiando con apuros para casi todas las evaluaciones."
+        },
+        {
+          "title": " Me cuesta mucho atender una clase."
+        },
+        {
+          "title": " Sólo pongo interés al leer las primeras o las últimas frases de la mayoría de los párrafos de los libros."
+        },
+        {
+          "title": " Sólo estudio lo que me gusta."
+        },
+        {
+          "title": " Me distraigo fácilmente cuando estoy estudiando."
+        },
+        {
+          "title": " Intento relacionar lo que estoy estudiando con mis propias experiencias."
+        },
+        {
+          "title": " Aprovecho las horas después del colegio para estudiar."
+        },
+        {
+          "title": " Cuando algún material de estudio me resulta difícil, lo dejo o estudio sólo lo más fácil."
+        },
+        {
+          "title": " Hago resúmenes o esquemas para entender lo que estoy estudiando."
+        },
+        {
+          "title": " No me gusta la mayoría de las cosas que se ofrecen en las clases del colegio."
+        },
+        {
+          "title": " Tengo problemas para entender lo que me pide la pregunta en una evaluación."
+        },
+        {
+          "title": " Hago tablas sencillas o diagramas para organizar el material e información de las clases a las que asisto."
+        },
+        {
+          "title": " Mientras paso por una evaluación, la preocupación por darla mal me distrae."
+        },
+        {
+          "title": " No entiendo algunas explicaciones en clase porque no escucho con atención."
+        },
+        {
+          "title": " Leo libros relacionados con asuntos de mis estudios."
+        },
+        {
+          "title": " Siento pánico al pasar por una evaluación importante."
+        },
+        {
+          "title": " Cuando dejan trabajos para la casa, me fijo un horario y lo sigo al pie de la letra."
+        },
+        {
+          "title": " Cuando paso por alguna evaluación, me doy cuenta que he estudiado mal."
+        },
+        {
+          "title": " Me es difícil saber cuáles son las ideas principales que debo recordar de un texto."
+        },
+        {
+          "title": " Me concentro plenamente cuando estudio."
+        },
+        {
+          "title": " Utilizo los encabezamientos de los capítulos como guía para encontrar las ideas más importantes mientras leo."
+        },
+        {
+          "title": " Cuando paso por una evaluación, me pongo tan nervioso(a) que no respondo todo lo que sé."
+        },
+        {
+          "title": " Memorizo palabras, fórmulas y signos sin saber lo que quieren decir."
+        },
+        {
+          "title": " Me examino a mí mismo(a) para asegurarme que sé lo que he estudiado."
+        },
+        {
+          "title": " Postergo el cumplimiento de algunas tareas más de lo que debiera."
+        },
+        {
+          "title": " Procuro aplicar lo que estudio a mi vida diaria."
+        },
+        {
+          "title": " Me distraigo al realizar mis tareas académicas."
+        },
+        {
+          "title": " En mi opinión, lo que se enseña en el colegio no merece la pena ser aprendido."
+        },
+        {
+          "title": " En caso de estudiar, preparo apuntes, los reviso y corrijo los errores."
+        },
+        {
+          "title": " No sé cómo debo estudiar cada tema en particular."
+        },
+        {
+          "title": " Al estudiar, a menudo parece que me pierdo en los detalles y no puedo recordar las ideas principales."
+        },
+        {
+          "title": " Si hay clases de repaso, voy a ellas porque me parecen útiles."
+        },
+        {
+          "title": " Paso tanto tiempo en reuniones de tipo social que esto repercute en mi rendimiento académico."
+        },
+        {
+          "title": " Al pasar por evaluaciones y realizar ciertos proyectos me doy cuenta que no he entendido lo que se demanda de mí."
+        },
+        {
+          "title": " Intento relacionar varias ideas del tema que estoy estudiando."
+        },
+        {
+          "title": " Tengo dificultad para encontrar la idea principal de lo que leo"
+        }
+      ]
     },
     {
-      "a": "Le gusta caminar por los cerros buscando piedras raras.",
-      "b": "Prefiere diseñar las viviendas de una urbanización."
-    },
-    {
-      "a": "Le gusta escribir artículos deportivos deportivos para un diario.",
-      "b": "Prefiere determinar la resistencia de materiales para una construcción"
-    },
-    {
-      "a": "Le gusta hacer tallado en madera",
-      "b": "Prefiere calcular la cantidad de materiales para una construcción."
-    },
-    {
-      "a": "Le gusta ordenar y archivar documentos",
-      "b": "Prefiere proyectar el sistema eléctrico de una construcción."
-    },
-    {
-      "a": "Le agrada dedicar su tiempo en el estudio de teorías económicas",
-      "b": "Prefiere dedicar su tiempo en la lectura de revistas sobre mecánica."
-    },
-    {
-      "a": " Le gusta mucha la vida militar.",
-      "b": "Prefiere diseñar; maquinas, motores, etc., de alto rendimiento."
-    },
-    {
-      "a": "Le gusta planificar acerca de cómo formar una cooperativa.",
-      "b": "Prefiere estudiar el lenguaje de computación (IBM)."
-    },
-    {
-      "a": "Le agrada estu agrada estudiar la gramática",
-      "b": "Prefiere estudiar las matemáticas."
+      "nombre": "BERGER",
+      "preguntas": [
+        {
+          "a": "Me gusta salir a pasear con mis amigos.",
+          "b": "Prefiero salir solo."
+        },
+        {
+          "a": "Me tomo muy a pecho las pequeñas cosas cuya importancia sin embargo se que es mínima, me trastorno a veces por insignificancias.",
+          "b": "Sólo me perturbo con acontecimientos graves."
+        },
+        {
+          "a": "Me entusiasma o indigna con facilidad",
+          "b": "Acepto tranquilamente las cosas tal como son."
+        },
+        {
+          "a": "Soy susceptible, me siente herido fácilmente y de manera profunda por una crítica o una observación poco amable/burlona.",
+          "b": "Soporto las críticas sin sentirse menoscabado?"
+        },
+        {
+          "a": "¿Se turba con facilidad ante un suceso improvisto?, ¿Se sobresalta cuando le llaman intempestivamente?, ¿Palidece o se ruboriza con facilidad?",
+          "b": "¿No se desconcierta Ud. sino muy difícilmente?"
+        },
+        {
+          "a": "Se acalora Ud. al hablar?, ¿Eleva la voz en la conversación? ¿Siente la necesidad se emplear términos violentos o palabras demasiado expresivas?",
+          "b": "¿Afronta Ud. la situación con serenidad?"
+        },
+        {
+          "a": "Le agrada dedicar su¿Se siente Ud. angustiado frente a una tarea nueva o ante una perspectivas de cambio? tiempo en el estudio de teorías económicas",
+          "b": "¿Afronta la situación con serenidad?"
+        },
+        {
+          "a": "Pasa Ud. alternativamente de la exaltación al abatimiento. de la alegría a la tristeza y viceversa por tonterías y aún sin razón aparente?",
+          "b": "¿Es de humor parejo?"
+        },
+        {
+          "a": ". ¿Se siente frecuentemente obsesionado con dudas y escrúpulos, a propósito de actos sin importancia, conserva Ud. a menudo en la mente un pensamiento completamente inútil y que aún lo inoportuna?",
+          "b": "¿No conoce más que por excepción este penosa estado de preocupación?"
+        },
+        {
+          "a": "¿Le sucede a veces estar violentamente conmovido, que le resulta completamente imposible hacer lo que desearía en tales casos, ejemplo: experimenta estados de miedo que le impiden realizar cualquier movimiento o timidez que no le deja articular una sola palabra, etc.?",
+          "b": "¿Por el contrario, jamás lo ha experimentado?"
+        }
+      ]
     }
   ],
   "test": [
     {
-      "question1": "a",
-      "question2": "b",
-      "question3": "b",
-      "question4": "b",
-      "question5": "b",
-      "question6": "b",
-      "question7": "b",
-      "question8": "b",
-      "question9": "b",
-      "question10": "a",
+      "CASM": {
+        "CASM1": [
+          "b"
+        ],
+        "CASM2": [
+          "b"
+        ],
+        "CASM3": [
+          "b"
+        ],
+        "CASM4": [
+          "b"
+        ],
+        "CASM5": [
+          "a"
+        ],
+        "CASM6": [
+          "a",
+          "b"
+        ],
+        "CASM7": [
+          "a"
+        ],
+        "CASM8": [
+          "a"
+        ],
+        "CASM9": [
+          "a"
+        ],
+        "CASM10": [
+          "a"
+        ]
+      },
+      "HEA": {
+        "BERGER2": "1",
+        "BERGER3": "1",
+        "BERGER4": "9",
+        "BERGER5": "1",
+        "BERGER6": "1",
+        "BERGER7": "1",
+        "BERGER8": "1",
+        "BERGER9": "9",
+        "BERGER10": "9"
+      },
+      "BERGER": {
+        "HEA2": "N",
+        "HEA3": "P",
+        "HEA4": "M",
+        "HEA5": "N"
+      },
       "id": 1
-    },
-    {
-      "question1": "a",
-      "question2": "a",
-      "question3": "a",
-      "question4": "a",
-      "question5": "a",
-      "question6": "a",
-      "question7": "a",
-      "question8": "a",
-      "question9": "a",
-      "question10": "a",
-      "id": 2
-    },
-    {
-      "question1": [
-        "a",
-        "b"
-      ],
-      "question2": [
-        "a",
-        "b"
-      ],
-      "question3": [
-        "a"
-      ],
-      "question4": [
-        "a"
-      ],
-      "question5": [
-        "a",
-        "b"
-      ],
-      "question6": [
-        "b"
-      ],
-      "question7": [
-        "a"
-      ],
-      "question8": [
-        "a",
-        "b"
-      ],
-      "question9": [
-        "a",
-        "b"
-      ],
-      "question10": [
-        "a"
-      ],
-      "id": 3
     }
   ]
 }

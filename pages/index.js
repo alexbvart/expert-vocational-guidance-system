@@ -32,6 +32,7 @@ export default function Home({ questions }) {
         </p>
         <CardList data={questions} className="layout_with_margin" />
 
+
       </main>
 
       <footer className={styles.footer}>

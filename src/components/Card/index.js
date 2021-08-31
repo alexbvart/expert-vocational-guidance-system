@@ -8,10 +8,11 @@ const Card = ({ title, children }) => {
                 <article
                     className={styles.card}
                 >
-                    {/* <h2>{title} &rarr;</h2> */}
+                    {title && <h2>{title}</h2>}
                     {children}
                 </article>
         </>
     );
 }
 export default Card;
+/* &rarr; */

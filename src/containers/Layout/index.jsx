@@ -5,7 +5,7 @@ import {layout,main} from './layout.module.css'
 const Layout = ({children}) => {
     return ( 
         <>
-            <Header/>
+            {/* <Header/> */}
             <div className={layout}>
                 <main className={main}>
                     {children}

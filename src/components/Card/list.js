@@ -6,10 +6,10 @@ import swal from 'sweetalert'
 import post from '@services/post';
 import scrollToRef from '@hooks/scrollToRef';
 // The following component is an example of your existing Input Component
-const Input = ({ label, register, required }) => (
+const Input = ({ label, register, required, type }) => (
     <>
         <label>{label}</label>
-        <input {...register(label, { required })} />
+        <input type={type} {...register(label, { required })} />
     </>
 );
 
@@ -43,9 +43,19 @@ const CardList = ({ data, className }) => {
     }, [watch]); */
 
     const onSubmit = async (data) => {
-        console.log({ data });
-        const res = await post({src:"test", data:data})
-        if(res.status===201){
+        
+
+        const CASM = Object.fromEntries(Object.entries(data).slice(0,10));
+        const HEA = Object.fromEntries(Object.entries(data).slice(11,20));
+        const BERGER = Object.fromEntries(Object.entries(data).slice(21,30));
+/*         const CASM = Object.fromEntries(Object.entries(data).slice(0,143));
+        const HEA = Object.fromEntries(Object.entries(data).slice(144,220));
+        const BERGER = Object.fromEntries(Object.entries(data).slice(221,250)); */
+
+        const res = await post({ src: "test", data: {
+            CASM, HEA, BERGER
+        } })
+        if (res.status === 201) {
             swal("Datos registrados", "El test se esta evaluando", "success", {
                 button: "Ver Resultado",
             });
@@ -74,28 +84,105 @@ const CardList = ({ data, className }) => {
     return (
         <>
             <form className={classStyles} onSubmit={handleSubmit(onSubmit, onError)} >
-                {data &&
-                    data.map((card, index) => (
+                {data[0] &&
+                    data[0].preguntas.map((card, index) => (
+                        <Card
+                            title={card.title}
+                            key={index}
+                        >
+                            <input
+                                {...register(`CASM${index + 1}`, { required: true })}
+                                type="checkbox"
+                                value="a"
+                                id={`CASM${index + 1}a`}
+                            />
+                            <label htmlFor={`CASM${index + 1}a`}>{card.a}</label>
+                            <br></br>
+                            <input
+                                {...register(`CASM${index + 1}`, { required: true })}
+                                type="checkbox"
+                                value="b"
+                                id={`CASM${index + 1}b`}
+                            />
+                            <label htmlFor={`CASM${index + 1}b`}>{card.b}</label>
+                            {errors[`CASM${index + 1}`] && <ErrorMessage>No olvides marcar una respuesta</ErrorMessage>}
+                            <span className="flex_center">{`${index + 1}`}</span>
+                        </Card>
+                    ))
+                }
+                {data[1] &&
+                    data[1].preguntas.map((card, index) => (
                         <Card
                             title={card.titulo}
                             key={index}
                         >
                             <input
-                                {...register(`question${index + 1}`, { required: true })}
-                                type="checkbox"
-                                value="a"
-                                id={`question${index + 1}a`}
+                                {...register(`BERGER${index + 1}`, { required: true })}
+                                type="radio"
+                                value="9"
+                                id={`BERGER${index + 1}9`}
                             />
-                            <label htmlFor={`question${index + 1}a`}>{card.a}</label>
+                            <label htmlFor={`BERGER${index + 1}9`}>{card.a}</label>
                             <br></br>
                             <input
-                                {...register(`question${index + 1}`, { required: true })}
-                                type="checkbox"
-                                value="b"
-                                id={`question${index + 1}b`}
+                                {...register(`BERGER${index + 1}`, { required: true })}
+                                type="radio"
+                                value="1"
+                                id={`BERGER${index + 1}1`}
                             />
-                            <label htmlFor={`question${index + 1}b`}>{card.b}</label>
-                            {errors[`question${index + 1}`] && <ErrorMessage>No olvides marcar una respuesta</ErrorMessage>}
+                            <label htmlFor={`BERGER${index + 1}1`}>{card.b}</label>
+                            {errors[`BERGER${index + 1}`] && <ErrorMessage>No olvides marcar una respuesta</ErrorMessage>}
+                            <span className="flex_center">{`${index + 1}`}</span>
+                        </Card>
+                    ))
+                }
+                {data[2] &&
+                    data[2].preguntas.map((card, index) => (
+                        <Card
+                            title={card.title}
+                            key={index}
+                        >
+                            <input
+                                {...register(`HEA${index + 1}`, { required: true })}
+                                type="radio"
+                                value="S"
+                                id={`HEA${index + 1}S`}
+                            />
+                            <label htmlFor={`HEA${index + 1}S`}>Me ocurre siempre</label>
+
+                            <input
+                                {...register(`HEA${index + 1}`, { required: true })}
+                                type="radio"
+                                value="M"
+                                id={`HEA${index + 1}M`}
+                            />
+                            <label htmlFor={`HEA${index + 1}M`}>Me ocurre mucho</label>
+
+                            <input
+                                {...register(`HEA${index + 1}`, { required: true })}
+                                type="radio"
+                                value="P"
+                                id={`HEA${index + 1}P`}
+                            />
+                            <label htmlFor={`HEA${index + 1}P`}>Me ocurre pocas veces, casi nunca</label>
+
+                            <input
+                                {...register(`HEA${index + 1}`, { required: true })}
+                                type="radio"
+                                value="A"
+                                id={`HEA${index + 1}A`}
+                            />
+                            <label htmlFor={`HEA${index + 1}A`}>Me ocurre alguna vez</label>
+
+                            <input
+                                {...register(`HEA${index + 1}`, { required: true })}
+                                type="radio"
+                                value="N"
+                                id={`HEA${index + 1}N`}
+                            />
+                            <label htmlFor={`HEA${index + 1}N`}>No me ocurre nunca</label>
+
+                            {errors[`HEA${index + 1}`] && <ErrorMessage>No olvides marcar una respuesta</ErrorMessage>}
                             <span className="flex_center">{`${index + 1}`}</span>
                         </Card>
                     ))
