@@ -54,6 +54,57 @@
       "question9": "b",
       "question10": "a",
       "id": 1
+    },
+    {
+      "question1": "a",
+      "question2": "a",
+      "question3": "a",
+      "question4": "a",
+      "question5": "a",
+      "question6": "a",
+      "question7": "a",
+      "question8": "a",
+      "question9": "a",
+      "question10": "a",
+      "id": 2
+    },
+    {
+      "question1": [
+        "a",
+        "b"
+      ],
+      "question2": [
+        "a",
+        "b"
+      ],
+      "question3": [
+        "a"
+      ],
+      "question4": [
+        "a"
+      ],
+      "question5": [
+        "a",
+        "b"
+      ],
+      "question6": [
+        "b"
+      ],
+      "question7": [
+        "a"
+      ],
+      "question8": [
+        "a",
+        "b"
+      ],
+      "question9": [
+        "a",
+        "b"
+      ],
+      "question10": [
+        "a"
+      ],
+      "id": 3
     }
   ]
 }

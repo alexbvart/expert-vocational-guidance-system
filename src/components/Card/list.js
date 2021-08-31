@@ -4,6 +4,7 @@ import styles from './card.module.css'
 import { useForm } from "react-hook-form";
 import swal from 'sweetalert'
 import post from '@services/post';
+import scrollToRef from '@hooks/scrollToRef';
 // The following component is an example of your existing Input Component
 const Input = ({ label, register, required }) => (
     <>
@@ -29,16 +30,7 @@ const ErrorMessage = ({ children }) => (
     </span>
 )
 
-const scrollToRef = (ref) => {
-    /* ref.scrollIntoView(true) */
-    const clientheight = ref.clientHeight
-    const newscroll = ref.offsetTop - 250
-    window.scrollTo({
-        left: 0,
-        top: newscroll,
-        behavior: 'smooth'
-    })
-}
+
 
 const CardList = ({ data, className }) => {
     const { register, watch, handleSubmit, formState: { errors } } = useForm();
@@ -56,10 +48,6 @@ const CardList = ({ data, className }) => {
         if(res.status===201){
             swal("Datos registrados", "El test se esta evaluando", "success", {
                 button: "Ver Resultado",
-            });
-        }else{
-            swal("Algo salio mal", "Algunas preguntas no han sido respondidas", "warning", {
-                button: "De acuerdo",
             });
         }
     }
@@ -94,7 +82,7 @@ const CardList = ({ data, className }) => {
                         >
                             <input
                                 {...register(`question${index + 1}`, { required: true })}
-                                type="radio"
+                                type="checkbox"
                                 value="a"
                                 id={`question${index + 1}a`}
                             />
@@ -102,7 +90,7 @@ const CardList = ({ data, className }) => {
                             <br></br>
                             <input
                                 {...register(`question${index + 1}`, { required: true })}
-                                type="radio"
+                                type="checkbox"
                                 value="b"
                                 id={`question${index + 1}b`}
                             />
