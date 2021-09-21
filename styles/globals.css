@@ -1,6 +1,7 @@
 :root {
   --bg-1: #FBFBFB;
   --bg-2: #F7F7F7;
+  --bg-3: #EDEDED;
   --text-black: #131D29;
   --question: #162431;
   --primary: #7CD4BB;
@@ -56,6 +57,35 @@ label {
 
 input[type="submit"], button {
   background-color: var(--primary);
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  width: auto;
+  overflow: visible;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  text-align: inherit;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+input[type="password"], 
+input[type="text"], 
+input[type="number"], 
+input[type="date"]
+{
+  background-color: var(--bg-3);
+  color: var(--question);
   width: 100%;
   height: 100%;
   border: none;

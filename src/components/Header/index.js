@@ -1,19 +1,25 @@
 import Link from 'next/link'
+import {header,navbar_item} from './header.module.css'
 const Header = () => {
     return (
         <>
-            <nav className="navbar navbar-dark bg-dark">
-                <div className="container-fluid">
-                    <div className="container">
-                            <Link href="/report">
-                                <a className="navbar-brand">
-                                    Alertas
+            <nav className={header}>
+                    <div className="">
+                            <Link href="/">
+                                <a className={navbar_item}>
+                                Test vocacional
                                 </a>
                             </Link>
-                            <Link href="/notification">
-                                <a className="navbar-brand">Notificaciones</a>
+                </div>
+                <div className="">
+                            <Link href="/register">
+                                <a className={navbar_item}>
+                                    Registrarme
+                                </a>
                             </Link>
-                    </div>
+                            <Link href="/login">
+                                <a className={navbar_item}>Iniciar Sesión</a>
+                            </Link>
                 </div>
             </nav>
         </>

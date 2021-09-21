@@ -1,0 +1,17 @@
+.header{
+    position: sticky;
+    position: -webkit-sticky;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    padding: 0 12px;
+}
+.navbar_item{
+    padding: 8px;
+    border-radius: 4px;
+}
+.navbar_item:hover{
+    background-color: var(--bg-3);
+}
