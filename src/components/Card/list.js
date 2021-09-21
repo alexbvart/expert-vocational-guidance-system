@@ -3,7 +3,7 @@ import Card from './index';
 import styles from './card.module.css'
 import { useForm } from "react-hook-form";
 import swal from 'sweetalert'
-import post from '@services/post';
+import post from '@module/post';
 import scrollToRef from '@hooks/scrollToRef';
 // The following component is an example of your existing Input Component
 const Input = ({ label, register, required, type }) => (

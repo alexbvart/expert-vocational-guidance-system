@@ -22,6 +22,7 @@
 }
 .suggestions_list{
     grid-auto-flow: column;
+    grid-template-columns: repeat(3,1fr);
 
 }
 }
