@@ -3,7 +3,9 @@
     "baseUrl": ".",
     "paths": {
       "@hooks/*": ["hooks/*"],
-      "@services/*": ["services/*"],
+      "@module/*": ["module/*"],
+      "@services/*": ["service/*"],
+      "@helper/*": ["helper/*"],
       "@components/*": ["src/components/*"],
       "@containers/*": ["src/containers/*"],
     }

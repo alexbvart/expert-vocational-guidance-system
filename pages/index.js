@@ -1,3 +1,4 @@
+import CasmForm from '@components/Card/casm'
 import CardList from '@components/Card/list'
 import Suggestions from '@components/Suggestions'
 import SuggestionsList from '@components/Suggestions/list'
@@ -5,7 +6,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home({ questions }) {
+export default function Home({ questions,casm }) {
   return (
     <>
       <Head>
@@ -30,8 +31,8 @@ export default function Home({ questions }) {
         <p className={styles.description}>
           Empecemos
         </p>
-        <CardList data={questions} className="layout_with_margin" />
-
+        {/* <CardList data={questions} className="layout_with_margin" /> */}
+        <CasmForm questions={casm}/>
 
       </main>
 
@@ -58,10 +59,12 @@ export async function getServerSideProps(context) {
 
   const questions = await fetch(`${SERVER_HOST}/preguntas`)
     .then(res => res.json())
-
+    const casm = await fetch(`${SERVER_HOST}/CASM`)
+    .then(res => res.json())
   return {
     props: {
       questions,
+      casm
     }
   };
 }
